@@ -29,17 +29,17 @@ export class GridListOverviewExample {
   ];
   rendertask: any
   constructor() {
-    this.rendertask = interval(1000);
-    this.rendertask.subscribe(
-      function (x) {
-        console.log("hello")
-      },
-      function (err) {
-        console.log('Error: ' + err);
-      },
-      function () {
-        console.log('Completed');
-      });
+    // this.rendertask = interval(1000);
+    // this.rendertask.subscribe(
+    //   function (x) {
+    //     console.log("hello")
+    //   },
+    //   function (err) {
+    //     console.log('Error: ' + err);
+    //   },
+    //   function () {
+    //     console.log('Completed');
+    //   });
 
   }
 }
