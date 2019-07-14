@@ -9,7 +9,6 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './material-module';
 
-import {GridListOverviewExample} from './app/grid-list-overview-example';
 import {FooterComponent} from './app/footer/footer.component';
 import {LEDDisplayComponent} from './app/led-display/led-display.component';
 
@@ -23,7 +22,7 @@ import {LEDDisplayComponent} from './app/led-display/led-display.component';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  declarations: [GridListOverviewExample, LEDDisplayComponent, FooterComponent],
+  declarations: [LEDDisplayComponent, FooterComponent],
   bootstrap: [LEDDisplayComponent],
   providers: []
 })
