@@ -25,21 +25,4 @@ export class LEDDisplayComponent {
     { text: 'eight', id: 8, color: 'lightgreen' },
     { text: 'nine', id: 9, color: 'lightpink' }
   ];
-
-  triggerchangedetection: any
-  onStart() {
-    if (this.triggerchangedetection === undefined) {
-      this.triggerchangedetection = interval(1000);
-      this.triggerchangedetection.subscribe(
-        function (n) {
-          console.log(`It's been ${n} seconds since subscribing!`)
-        },
-        function (err) {
-          console.log('Error: ' + err);
-        },
-        function () {
-          console.log('Completed');
-        });
-    }
-  }
 }
