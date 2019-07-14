@@ -14,16 +14,20 @@ export interface Tile {
 export class ContentComponent implements OnInit{
   tiles: Tile[];
   constructor() {
-    
+    this.tiles =  [];
   }
 
 ngOnInit()
 {
-  fetch('https://www.mocky.io/v2/5d2ae8cf3100005300582192')
-      //.then((resp) => resp.json()) // Transform the data into json
-      .then(function (data) {
-        this.tiles = JSON.parse(JSON.stringify(data));
-        console.log(data["tiles"])
-      });
+  // fetch('https://www.mocky.io/v2/5d2ae8cf3100005300582192')
+  //     .then((resp) => resp.json()) // Transform the data into json
+  //     .then(function (data) {
+  //       //this.tiles = JSON.parse(JSON.stringify(data));
+  //       let temp = data["tiles"];
+  //       this.tiles = temp;
+  //       console.log(typeof(data["tiles"]))
+  //     });
+
+  
 }
 }
