@@ -27,20 +27,22 @@ export class GridListOverviewExample {
     { text: 'eight', id: 8, color: 'lightgreen' },
     { text: 'nine', id: 9, color: 'lightpink' }
   ];
-  rendertask: any
-  constructor() {
-    // this.rendertask = interval(1000);
-    // this.rendertask.subscribe(
-    //   function (x) {
-    //     console.log("hello")
-    //   },
-    //   function (err) {
-    //     console.log('Error: ' + err);
-    //   },
-    //   function () {
-    //     console.log('Completed');
-    //   });
-
+  
+  triggerchangedetection: any
+  onStart() {
+    if (this.triggerchangedetection === undefined) {
+      this.triggerchangedetection = interval(1000);
+      this.triggerchangedetection.subscribe(
+        function (n) {
+          console.log(`It's been ${n} seconds since subscribing!`)
+        },
+        function (err) {
+          console.log('Error: ' + err);
+        },
+        function () {
+          console.log('Completed');
+        });
+    }
   }
 }
 
