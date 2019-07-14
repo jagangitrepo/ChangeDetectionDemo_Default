@@ -11,6 +11,7 @@ import {DemoMaterialModule} from './material-module';
 
 import {FooterComponent} from './app/footer/footer.component';
 import {LEDDisplayComponent} from './app/led-display/led-display.component';
+import {TileComponent} from './app/tile/tile.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,7 @@ import {LEDDisplayComponent} from './app/led-display/led-display.component';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  declarations: [LEDDisplayComponent, FooterComponent],
+  declarations: [LEDDisplayComponent, FooterComponent, TileComponent],
   bootstrap: [LEDDisplayComponent],
   providers: []
 })

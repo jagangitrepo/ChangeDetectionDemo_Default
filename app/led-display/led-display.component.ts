@@ -9,8 +9,7 @@ export interface Tile {
 
 @Component({
   selector: 'led-display',
-  templateUrl: 'led-display.component.html',
-  styles:['mat-grid-tile {  background: lightblue; }']
+  templateUrl: 'led-display.component.html'
 })
 export class LEDDisplayComponent {
     @Input()

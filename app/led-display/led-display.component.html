@@ -1,4 +1,4 @@
 <mat-grid-list cols="3" rowHeight="3:1">
-	<mat-grid-tile *ngFor="let tile of tiles" [style.background]="tile.color"> {{tile.text}} </mat-grid-tile>
+	<tile *ngFor="let tile of tiles" [bgcolor]="tile.color" [text]="tile.text"></tile>
 </mat-grid-list>
 <footer></footer>
