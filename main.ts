@@ -10,6 +10,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './material-module';
 
 import {GridListOverviewExample} from './app/grid-list-overview-example';
+import {LEDDisplayComponent} from './app/led-display/led-display.component';
 
 @NgModule({
   imports: [
@@ -21,9 +22,8 @@ import {GridListOverviewExample} from './app/grid-list-overview-example';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  entryComponents: [GridListOverviewExample],
-  declarations: [GridListOverviewExample],
-  bootstrap: [GridListOverviewExample],
+  declarations: [GridListOverviewExample, LEDDisplayComponent],
+  bootstrap: [LEDDisplayComponent],
   providers: []
 })
 export class AppModule {}
