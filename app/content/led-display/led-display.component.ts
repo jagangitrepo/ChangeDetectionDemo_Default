@@ -1,5 +1,4 @@
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
-import { interval, from } from 'rxjs';
 
 export interface Tile {
   color: string;
@@ -12,26 +11,11 @@ export interface Tile {
   templateUrl: 'led-display.component.html',
   styles: ['mat-grid-tile {  background: lightblue; }']
 })
-export class LEDDisplayComponent implements OnInit, OnDestroy {
+export class LEDDisplayComponent {
   @Input()
   tiles: Tile[];
 
-  data:any
-  constructor()
-  {
-    this.data = from(fetch('http://www.mocky.io/v2/5d2ae467310000280058218a'));
-  }
+  constructor() {
 
-  ngOnInit() {
-    this.data.subscribe({
-      next(response) { console.log(response); },
-      error(err) { console.error('Error: ' + err); },
-      complete() { console.log('Completed'); }
-    });
-  }
-
-  ngOnDestroy()
-  {
-    this.data.unsubscribe();
   }
 }
