@@ -1,9 +1,9 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'footer',
+  selector: 'header',
   template: '<h1>{{title}}</h1>'
 })
-export class FooterComponent {
+export class HeaderComponent {
   title:string;
 }

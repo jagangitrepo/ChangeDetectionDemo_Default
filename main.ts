@@ -9,8 +9,10 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './material-module';
 
+import {HeaderComponent} from './app/header/header.component';
+import {ContentComponent} from './app/content/content.component';
 import {FooterComponent} from './app/footer/footer.component';
-import {LEDDisplayComponent} from './app/led-display/led-display.component';
+import {LEDDisplayComponent} from './app/content/led-display/led-display.component';
 import {TileComponent} from './app/tile/tile.component';
 
 @NgModule({
@@ -23,7 +25,7 @@ import {TileComponent} from './app/tile/tile.component';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  declarations: [LEDDisplayComponent, FooterComponent, TileComponent],
+  declarations: [HeaderComponent, ContentComponent,LEDDisplayComponent, FooterComponent, TileComponent],
   bootstrap: [LEDDisplayComponent],
   providers: []
 })
