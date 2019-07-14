@@ -13,7 +13,6 @@ import {HeaderComponent} from './app/header/header.component';
 import {ContentComponent} from './app/content/content.component';
 import {FooterComponent} from './app/footer/footer.component';
 import {LEDDisplayComponent} from './app/content/led-display/led-display.component';
-import {TileComponent} from './app/tile/tile.component';
 
 @NgModule({
   imports: [
@@ -25,7 +24,7 @@ import {TileComponent} from './app/tile/tile.component';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  declarations: [HeaderComponent, ContentComponent,LEDDisplayComponent, FooterComponent, TileComponent],
+  declarations: [HeaderComponent, ContentComponent,LEDDisplayComponent, FooterComponent],
   bootstrap: [LEDDisplayComponent],
   providers: []
 })
