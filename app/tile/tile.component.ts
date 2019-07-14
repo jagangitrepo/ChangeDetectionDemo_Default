@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'tile',
+  selector: '[tile]',
   templateUrl: 'tile.component.html',
-  styles:['mat-grid-tile {  background: lightblue; }']
+  
 })
 
 export class TileComponent {
